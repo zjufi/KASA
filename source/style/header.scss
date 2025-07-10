@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__logo {
+        width: 150px;
+    }
+
+    .nav-header {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        font-size: 24px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        &__nav-link {
+            text-decoration: none;
+            color: black;
+            padding-bottom: 4px;
+
+            &.active {
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+
+        .nav-header {
+            font-size: 16px;
+
+           a {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
