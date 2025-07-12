@@ -1,0 +1,42 @@
+.error {
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        text-align: center;
+        font-size: 288px;
+        color: #FF6060;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    & p {
+        text-align: center;
+        font-size: 36px;
+        color: #FF6060;
+        margin: 0%;
+    }
+
+    & a {
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 920px) {
+        & h1 {
+            font-size: 96px;
+        }
+
+        & p {
+            font-size: 30px;
+        }
+
+        & a {
+            font-size: 14px;
+        }
+    }
+}
